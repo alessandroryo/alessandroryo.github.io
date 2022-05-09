@@ -12,30 +12,39 @@
     <link rel="shortcut icon" href="dist/img/ar-icon.png" type="image/x-icon">
 </head>
 <body>
-    <nav class="absolute top-0 left-0 w-full z-10 bg-white drop-shadow-md">
-        <div class="text-black w-full">
-                <div class="flex flex-row justify-around py-6 px-10 items-center">
-                    <div class="">
-                        <a href="#" class="text-4xl font-bold">alessandroryo</a>
+    <nav class="absolute top-0 left-0 w-full z-10 bg-white drop-shadow-md text-black">
+        <div class="flex flex-row px-5 lg:px-10 py-6 justify-between items-center">
+            <div class="lg:w-1/2">
+                <a href="#" class="text-xl lg:text-4xl font-bold">alessandroryo</a>
+            </div>
+            <div class="flex flex-row items-center justify-end lg:w-1/2">
+                <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+                    <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                </button>
+                <div id="nav-menu" class="flex items-center justify-center">
+                    <div class="absolute lg:static top-[110%] right-4 w-full max-w-[250px] rounded-md bg-white py-5 shadow-md lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
+                        <ul class="block lg:flex">
+                            <li class="hover:text-silver-chalice mx-6 py-2">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li class="hover:text-silver-chalice mx-6 py-2">
+                                <a href="#profile">Profile</a>
+                            </li>
+                            <li class="hover:text-silver-chalice mx-6 py-2">
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="hover:text-silver-chalice mx-6 py-2">
+                                <a href="#skills">Skills</a>
+                            </li>
+                            <li class="hover:text-silver-chalice mx-6 py-2">
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="flex items-center justify-between w-1/3">
-                        <li class="hover:text-silver-chalice">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="hover:text-silver-chalice">
-                            <a href="#profile">Profile</a>
-                        </li>
-                        <li class="hover:text-silver-chalice">
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="hover:text-silver-chalice">
-                            <a href="#skills">Skills</a>
-                        </li>
-                        <li class="hover:text-silver-chalice">
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
                 </div>
+            </div>
         </div>
     </nav>
 
@@ -52,18 +61,18 @@
     
     <section id="profile" class="pt-32">
         <div class="flex justify-center">
-            <div class="flex flex-wrap justify-center w-2/3 p-4">
-                <div class="w-1/2 flex flex-col">
-                    <h2 class="text-2xl font-semibold">Hello everyone 👋, I am</h2>
-                    <h1 class="text-6xl font-bold">Alessandro Ryo</h1>
-                    <h2 class="text-2xl font-normal mt-3">Student & Developer</h2>
-                    <p class="mt-9 mb-16 text-base text-justify ">This is my personal website to introduce myself a little, show my coding projects and programming languange that I have used. Feel free to contact me below 🤙.</p>
-                    <div class="w-1/2">
-                        <a href="#" class="text-xl py-2 px-6 rounded-full text-white bg-black hover:bg-davys-grey transition-all duration-300 ease-in-out drop-shadow-md">Contact Me</a>
+            <div class="flex flex-col lg:flex-row justify-center w-4/5 lg:w-2/3 p-4">
+                <div class="lg:w-1/2 flex flex-col">
+                    <h2 class="text-2xl font-semibold text-center lg:text-left">Hello everyone 👋, I am</h2>
+                    <h1 class="text-4xl lg:text-6xl font-bold text-center lg:text-left my-5 lg:my-0">Alessandro Ryo</h1>
+                    <h2 class="text-2xl font-normal mt-3 text-center lg:text-left">Student & Developer</h2>
+                    <p class="mt-9 mb-16 text-base text-center lg:text-justify ">This is my personal website to introduce myself a little, show my coding projects and programming languange that I have used. Feel free to contact me below 🤙.</p>
+                    <div class="text-center lg:text-left lg:w-1/2">
+                        <a href="#" class="text-md lg:text-xl py-2 px-6 rounded-full text-white bg-black hover:bg-davys-grey transition-all duration-300 ease-in-out drop-shadow-md">Contact Me</a>
                     </div>
                 </div>
-                <div class="w-1/2 flex items-center justify-center">
-                    <img src="dist/img/avatar.png" alt="" class="h-[330px] drop-shadow-md">
+                <div class="lg:w-1/2 flex items-center justify-center mt-10 lg:mt-0">
+                    <img src="dist/img/avatar.png" alt="" class="lg:h-[330px] drop-shadow-md">
                 </div>
             </div>
         </div>
@@ -71,14 +80,14 @@
     
     <section id="about-me" class="pt-32">
         <div class="flex justify-center">
-            <div class="flex justify-center w-2/3">
-                <div class="w-1/2 flex flex-col p-4">
-                    <h1 class="text-3xl font-bold">Education 🎓</h1>
-                    <p class="mt-5 mb-16 text-base text-justify">I am an undergraduate ICT student from Indonesia in HZ University of Applied Sciences, The Netherlands. My coding and programming skills that I get are not only from college, but also from different sources.</p>
+            <div class="flex flex-col lg:flex-row justify-center items-center w-full lg:w-2/3">
+                <div class="w-4/5 flex flex-col lg:p-4">
+                    <h1 class="text-3xl font-bold lg:text-left text-center">Education 🎓</h1>
+                    <p class="mt-5 mb-16 text-base lg:text-justify text-center">I am an undergraduate ICT student from Indonesia in HZ University of Applied Sciences, The Netherlands. My coding and programming skills that I get are not only from college, but also from different sources.</p>
                 </div>
-                <div class="w-1/2 flex flex-col p-4">
-                    <h1 class="text-3xl font-bold">Motivation 🔥</h1>
-                    <p class="mt-5 mb-16 text-base text-justify">My motivation for computers and programming brought me to my current life. I am the type of person who likes to learn something new, as we know that IT is a fast changing sector.</p>
+                <div class="w-4/5 flex flex-col lg:p-4">
+                    <h1 class="text-3xl font-bold lg:text-left text-center">Motivation 🔥</h1>
+                    <p class="mt-5 mb-16 text-base lg:text-justify text-center">My motivation for computers and programming brought me to my current life. I am the type of person who likes to learn something new, as we know that IT is a fast changing sector.</p>
                 </div>
             </div>
         </div>
@@ -86,37 +95,37 @@
     
     <section id="portfolio" class="pt-32">
         <div class="flex justify-center p-4">
-            <div class="flex flex-col justify-center w-2/3 text-center items-center">
-                <h3 class="text-2xl font-bold text-battleship-grey">Portfolio</h3>
-                <h2 class="text-5xl font-bold my-5">Latest Projects</h2>
-                <p class="w-1/2">These are some personal and assignment projects that I have made to improve my coding skills. Click the card for more details!</p>
+            <div class="flex flex-col justify-center lg:w-2/3 text-center items-center sm:w-1/2">
+                <h3 class="lg:text-2xl font-bold text-battleship-grey text-xl">Portfolio</h3>
+                <h2 class="lg:text-5xl font-bold my-5 text-3xl">Latest Projects</h2>
+                <p class="lg:w-1/2 w-full">These are some personal and assignment projects that I have made to improve my coding skills. Click the card for more details!</p>
             </div>
         </div>
         <div class="flex justify-center mt-16">
-            <div class="flex flex-wrap justify-center w-2/3">
-                    <div class="w-1/2 p-4">
+            <div class="flex flex-wrap justify-center lg:w-2/3">
+                    <div class="lg:w-1/2 p-4">
                         <img src="dist/img/hz-portfolio-web.png" alt="">
-                        <h4 class="mt-6 font-bold text-2xl">HZ Portfolio Website</h4>
-                        <h5 class="my-2 italic text-sm font-semibold text-silver-chalice">HTML, CSS, and JS</h5>
-                        <p class="text-base">This website is the first college assignment regarding a personal portfolio.</p>
+                        <h4 class="text-center lg:text-left mt-6 font-bold text-2xl">HZ Portfolio Website</h4>
+                        <h5 class="my-2 italic text-center lg:text-left text-sm font-semibold text-silver-chalice">HTML, CSS, and JS</h5>
+                        <p class="text-center lg:text-left text-base">This website is the first college assignment regarding a personal portfolio.</p>
                     </div>
-                    <div class="w-1/2 p-4">
+                    <div class="lg:w-1/2 p-4">
                         <img src="dist/img/password-defender-web.png" alt="">
-                        <h4 class="mt-6 font-bold text-2xl">Password Defender</h4>
-                        <h5 class="my-2 italic text-sm font-semibold text-silver-chalice">HTML Canvas, CSS, and TS</h5>
-                        <p class="text-base">A Web-based game created to teach children the importance of cyber and internet security.</p>
+                        <h4 class="text-center lg:text-left mt-6 font-bold text-2xl">Password Defender</h4>
+                        <h5 class="my-2 italic text-center lg:text-left text-sm font-semibold text-silver-chalice">HTML Canvas, CSS, and TS</h5>
+                        <p class="text-center lg:text-left text-base">A Web-based game created to teach children the importance of cyber and internet security.</p>
                     </div>
-                    <div class="w-1/2 p-4">
+                    <div class="lg:w-1/2 p-4">
                         <img src="dist/img/karisa-mobile-app.png" alt="">
-                        <h4 class="mt-6 font-bold text-2xl">Karisa Mobile App</h4>
-                        <h5 class="my-2 italic text-sm font-semibold text-silver-chalice">Flutter and Dart</h5>
-                        <p class="text-base">Cross platform mobile application created by @kalemrilekssantuy. Released soon. Stay tuned!</p>
+                        <h4 class="text-center lg:text-left mt-6 font-bold text-2xl">Karisa Mobile App</h4>
+                        <h5 class="my-2 italic text-center lg:text-left text-sm font-semibold text-silver-chalice">Flutter and Dart</h5>
+                        <p class="text-center lg:text-left text-base">Cross platform mobile application created by @kalemrilekssantuy. Released soon. Stay tuned!</p>
                     </div>
-                    <div class="w-1/2 p-4">
+                    <div class="lg:w-1/2 p-4">
                         <img src="dist/img/coming-soon.png" alt="">
-                        <h4 class="mt-6 font-bold text-2xl">3P Tests</h4>
-                        <h5 class="my-2 italic text-sm font-semibold text-silver-chalice">HTML, Tailwind CSS, PHP, and Laravel</h5>
-                        <p class="text-base">In collaboration with Zeelenberg Architecture.</p>
+                        <h4 class="text-center lg:text-left mt-6 font-bold text-2xl">3P Tests</h4>
+                        <h5 class="my-2 italic text-center lg:text-left text-sm font-semibold text-silver-chalice">HTML, Tailwind CSS, PHP, and Laravel</h5>
+                        <p class="text-center lg:text-left text-base">In collaboration with Zeelenberg Architecture.</p>
                     </div>
             </div>
         </div>
@@ -124,14 +133,14 @@
     
     <section id="skills" class="pt-32">
         <div class="flex justify-center p-4">
-            <div class="flex flex-col justify-center w-2/3 text-center items-center">
-                <h3 class="text-2xl font-bold text-battleship-grey">Skills</h3>
-                <h2 class="text-5xl font-bold my-5">Programming Skills</h2>
-                <p class="w-1/2">These are some programming languages and frameworks that I have been used. Click the card for more details!</p>
+            <div class="flex flex-col justify-center lg:w-2/3 text-center items-center sm:w-1/2">
+                <h3 class="lg:text-2xl font-bold text-battleship-grey text-xl">Skills</h3>
+                <h2 class="lg:text-5xl font-bold my-5 text-3xl">Programming Skills</h2>
+                <p class="lg:w-1/2 w-full">These are some programming languages and frameworks that I have been used. Click the card for more details!</p>
             </div>
         </div>
         <div class="flex justify-center mt-16">
-            <div class="grid grid-cols-3">
+            <div class="grid lg:grid-cols-3">
                     <div class="skill-card">
                         <img src="dist/img/html-logo.png" alt="" class="h-auto m-6">
                         <a href="#" class="skill-desc">HTML</a>
@@ -174,12 +183,12 @@
     
     <section id="contact" class="pt-32">
         <div class="flex justify-center p-4">
-            <div class="flex flex-col justify-center w-2/3 text-center items-center">
-                <h3 class="text-2xl font-bold text-battleship-grey">Contact</h3>
-                <h2 class="text-5xl font-bold my-5">Contact Me</h2>
-                <p class="w-1/2">Feel free to contact me via email or social media.</p>
-                <h4 class="mt-16 font-bold text-2xl">alessandroryo@gmail.com</h4>
-                <div class="flex flex-row items-center justify-around w-1/3 mt-8">
+            <div class="flex flex-col justify-center lg:w-2/3 text-center items-center sm:w-1/2">
+                <h3 class="lg:text-2xl font-bold text-battleship-grey text-xl">Contact</h3>
+                <h2 class="lg:text-5xl font-bold my-5 text-3xl">Contact Me</h2>
+                <p class="lg:w-1/2 w-2/3">Feel free to contact me via email or social media.</p>
+                <h4 class="mt-16 font-bold text-lg lg:text-2xl">alessandroryo@gmail.com</h4>
+                <div class="flex flex-row items-center justify-around w-2/3 lg:w-1/3 mt-8">
                     <a href="https://www.linkedin.com/in/alessandro-javva-ananda-satriyo-877aa5173/">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-11">
                             <path class="hover:fill-granite-grey" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
@@ -200,9 +209,9 @@
         </div>
     </section>
 
-    <footer class="text-white items-center flex justify-around bg-black py-6 drop-shadow-md px-10 mt-32">
-        <h5 class="text-4xl font-bold">alessandroryo</h5>
-        <h6 class="text-sm">Created by <span class="font-semibold">@alessandroyo</span> using <a href="https://tailwindcss.com/" class="text-cyan-500 font-semibold">Tailwind CSS</a></h6>
+    <footer class="text-white items-center flex flex-col lg:flex-row justify-between lg:justify-around bg-black py-6 drop-shadow-md px-10 mt-32">
+        <h5 class="text-2xl lg:text-4xl font-bold mb-3 lg:mb-0">alessandroryo</h5>
+        <h6 class="text-xs text-center lg:text-sm">Created by <span class="font-semibold">@alessandroyo</span> using <a href="https://tailwindcss.com/" class="text-cyan-500 font-semibold">Tailwind CSS</a></h6>
     </footer>
 
     <script src="dist/js/script.js"></script>
