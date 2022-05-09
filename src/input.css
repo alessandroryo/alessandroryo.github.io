@@ -5,6 +5,10 @@
 body {
     @apply font-poppins bg-gray-50
 }
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white;
+}
   
 .hamburger-line {
     @apply my-2 block h-[2px] w-[30px] bg-black;
@@ -20,11 +24,6 @@ body {
   
 .hamburger-active > span:nth-child(3) {
     @apply -rotate-45;
-}
-  
-.navbar-fixed {
-    @apply fixed z-[9999] bg-white;
-    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .skill-card {
