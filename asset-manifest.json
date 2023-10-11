@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/alessandroryo.github.io/static/css/main.0ec301c9.css",
-    "main.js": "/alessandroryo.github.io/static/js/main.bfef165c.js",
-    "static/media/Humane-Bold.woff": "/alessandroryo.github.io/static/media/Humane-Bold.e864217e5450be541ed9.woff",
-    "static/media/Humane-Bold.woff2": "/alessandroryo.github.io/static/media/Humane-Bold.52684b1e523aa990c209.woff2",
-    "index.html": "/alessandroryo.github.io/index.html",
-    "main.0ec301c9.css.map": "/alessandroryo.github.io/static/css/main.0ec301c9.css.map",
-    "main.bfef165c.js.map": "/alessandroryo.github.io/static/js/main.bfef165c.js.map"
+    "main.css": "/static/css/main.1d35e82b.css",
+    "main.js": "/static/js/main.bfef165c.js",
+    "static/media/Humane-Bold.woff": "/static/media/Humane-Bold.e864217e5450be541ed9.woff",
+    "static/media/Humane-Bold.woff2": "/static/media/Humane-Bold.52684b1e523aa990c209.woff2",
+    "index.html": "/index.html",
+    "main.1d35e82b.css.map": "/static/css/main.1d35e82b.css.map",
+    "main.bfef165c.js.map": "/static/js/main.bfef165c.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ec301c9.css",
+    "static/css/main.1d35e82b.css",
     "static/js/main.bfef165c.js"
   ]
 }
