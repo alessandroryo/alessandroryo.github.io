@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/alessandroryo.github.io/static/css/main.0ec301c9.css",
+    "main.js": "/alessandroryo.github.io/static/js/main.bfef165c.js",
+    "static/media/Humane-Bold.woff": "/alessandroryo.github.io/static/media/Humane-Bold.e864217e5450be541ed9.woff",
+    "static/media/Humane-Bold.woff2": "/alessandroryo.github.io/static/media/Humane-Bold.52684b1e523aa990c209.woff2",
+    "index.html": "/alessandroryo.github.io/index.html",
+    "main.0ec301c9.css.map": "/alessandroryo.github.io/static/css/main.0ec301c9.css.map",
+    "main.bfef165c.js.map": "/alessandroryo.github.io/static/js/main.bfef165c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ec301c9.css",
+    "static/js/main.bfef165c.js"
+  ]
+}
