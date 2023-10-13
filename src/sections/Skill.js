@@ -8,10 +8,6 @@ const initialSkills = [
     icon: "/img/skills/python.png",
   },
   {
-    name: "Adobe Photoshop",
-    icon: "/img/skills/photoshop.png",
-  },
-  {
     name: "Adobe Illustrator",
     icon: "/img/skills/illustrator.png",
   },
@@ -94,10 +90,6 @@ const initialSkills = [
   {
     name: "Next JS",
     icon: "/img/skills/nextjs.png",
-  },
-  {
-    name: "Dart",
-    icon: "/img/skills/dart.png",
   },
 ];
 

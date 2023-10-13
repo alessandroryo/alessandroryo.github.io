@@ -109,7 +109,7 @@ export default function Hero() {
         <AnimatePresence>
           {showContent && (
             <motion.div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8" initial="initial" animate="animate" variants={contentAnimations.entrance}>
-              <motion.div className="px-6 pb-24 pt-60 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-72 xl:col-span-6" initial="hidden" animate="visible">
+              <motion.div className="px-6 pt-2 pb-24 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-72 xl:col-span-6" initial="hidden" animate="visible">
                 <div className="max-w-2xl mx-auto lg:mx-0">
                   <motion.div className="mt-0 sm:mt-32 sm:flex lg:mt-16" variants={contentAnimations.floatIn} custom={1}>
                     <div className="relative ">
@@ -143,19 +143,34 @@ export default function Hero() {
                 </div>
               </motion.div>
               <motion.div className="relative -z-10 base:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0" variants={contentAnimations.floatIn} custom={6} ref={parallaxRef}>
-                <motion.video
-                  className="aspect-[3/2] w-full cursor-default object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
-                  autoPlay
-                  loop
-                  muted
-                  alt="Alessandro Ryo's"
-                  initial="hidden"
-                  animate={showContent ? "visible" : "hidden"}
-                  variants={contentAnimations.slideFromRight}
-                  style={window.innerWidth >= 1024 ? parallaxTranslate : {}}
-                >
-                  <source src="/video/Ryo.mp4" type="video/mp4" />
-                </motion.video>
+                {window.innerWidth >= 1024 ? (
+                  <motion.video
+                    className="aspect-[3/2] w-full cursor-default object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
+                    autoPlay
+                    loop
+                    muted
+                    alt="Alessandro Ryo's"
+                    initial="hidden"
+                    animate={showContent ? "visible" : "hidden"}
+                    variants={contentAnimations.slideFromRight}
+                    style={parallaxTranslate}
+                  >
+                    <source src="/video/Ryo.mp4" type="video/mp4" />
+                  </motion.video>
+                ) : (
+                  <motion.video
+                    className="aspect-[3/2] w-full cursor-default object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
+                    autoPlay
+                    loop
+                    muted
+                    alt="Alessandro Ryo's"
+                    initial="hidden"
+                    animate={showContent ? "visible" : "hidden"}
+                    variants={contentAnimations.slideFromRight}
+                  >
+                    <source src="/video/Ryo.mp4" type="video/mp4" />
+                  </motion.video>
+                )}
               </motion.div>
             </motion.div>
           )}
