@@ -14,7 +14,9 @@ export default function App() {
     <>
       <Navbar />
       <div className="overflow-hidden font-jakarta">
-        <Hero />
+        <div className="bg-white dark:bg-gray-900">
+          <Hero />
+        </div>
         <AboutMe />
         <div
           id="journey"

@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import HeroCard from "./components/HeroCard";
+import withClick from "./components/withClick";
+
+const ClickableHeroCard = withClick(HeroCard);
 
 export default function Hero() {
   const [showSplash, setShowSplash] = useState(true);
@@ -105,7 +109,7 @@ export default function Hero() {
   return (
     <div className="relative min-h-screen">
       {renderContent()}
-      <section id="hero" className={`max-h-screen z-10`}>
+      <section id="hero" className={`max-h-screen overflow-hidden`}>
         <AnimatePresence>
           {showContent && (
             <motion.div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8" initial="initial" animate="animate" variants={contentAnimations.entrance}>
@@ -113,20 +117,20 @@ export default function Hero() {
                 <div className="max-w-2xl mx-auto lg:mx-0">
                   <motion.div className="mt-0 sm:mt-32 sm:flex lg:mt-16" variants={contentAnimations.floatIn} custom={1}>
                     <div className="relative ">
-                      <motion.div initial={{ width: "0%" }} animate={controls} transition={{ duration: 0.5 }} className="absolute inset-y-0 left-0 z-0 rounded-full bg-gray-50" />
-                      <p className="relative z-10 px-3 py-1 text-sm leading-6 text-gray-500 rounded-full ring-1 ring-gray-900/10 hover:ring-gray-900/20" onMouseEnter={handleHoverStart} onMouseLeave={handleHoverEnd}>
+                      <motion.div initial={{ width: "0%" }} animate={controls} transition={{ duration: 0.5 }} className="absolute inset-y-0 left-0 rounded-full bg-gray-50 dark:bg-transparent" />
+                      <p className="relative px-3 py-1 mt-5 sm:mt-0 leading-6 text-gray-500 rounded-full text-[10px] sm:text-sm dark:text-white ring-1 dark:ring-white ring-gray-900/10 hover:ring-gray-900/20" onMouseEnter={handleHoverStart} onMouseLeave={handleHoverEnd}>
                         "No matter how hard you try, you will get what's meant for you."
                       </p>
                     </div>
                   </motion.div>
-                  <motion.div className="h-32 mt-6 sm:mt-4" variants={contentAnimations.floatIn} custom={2}>
+                  <motion.div className="h-32 mt-6 text-black sm:mt-4 dark:text-white" variants={contentAnimations.floatIn} custom={2}>
                     <TypeAnimation
                       cursor={true}
                       sequence={["", 3100, "Alessandro Javva Ananda Satriyo", 3000, "Ryo", 3000]}
                       wrapper="h1"
                       repeat={Infinity}
                       speed={10}
-                      className="text-4xl font-bold tracking-wide text-gray-900 lg:text-6xl font-dm"
+                      className="text-4xl font-bold tracking-wide lg:text-6xl font-dm"
                     />
                   </motion.div>
                   <motion.p className="mt-4 text-base leading-8 w-fit" variants={contentAnimations.floatIn} custom={3}>
@@ -137,15 +141,15 @@ export default function Hero() {
                     </span>
                   </motion.p>
 
-                  <motion.p className="mt-6 text-base leading-8 text-gray-600" variants={contentAnimations.floatIn} custom={4}>
+                  <motion.p className="mt-6 text-base leading-8 text-gray-600 dark:text-white" variants={contentAnimations.floatIn} custom={4}>
                     Hi there! I'm Ryo, a passionate student and developer dedicated to creating innovative solutions and expanding my knowledge in the tech world.
                   </motion.p>
                 </div>
               </motion.div>
-              <motion.div className="relative -z-10 base:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0" variants={contentAnimations.floatIn} custom={6} ref={parallaxRef}>
-                {window.innerWidth >= 1024 ? (
+              <motion.div className="relative base:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0" variants={contentAnimations.floatIn} custom={6} ref={parallaxRef}>
+                {/* {window.innerWidth >= 1024 ? (
                   <motion.video
-                    className="aspect-[3/2] w-full cursor-default object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
+                    className="aspect-[3/2]  z-[-2] w-full cursor-default object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
                     autoPlay
                     loop
                     muted
@@ -159,7 +163,7 @@ export default function Hero() {
                   </motion.video>
                 ) : (
                   <motion.video
-                    className="aspect-[3/2] w-full cursor-default object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
+                    className="aspect-[3/2] z-[-1] w-full cursor-default object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full mb-10"
                     autoPlay
                     loop
                     muted
@@ -170,7 +174,8 @@ export default function Hero() {
                   >
                     <source src="/video/Ryo.mp4" type="video/mp4" />
                   </motion.video>
-                )}
+                )} */}
+                <ClickableHeroCard />
               </motion.div>
             </motion.div>
           )}

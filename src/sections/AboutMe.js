@@ -29,7 +29,7 @@ export default function AboutMe() {
 
   return (
     <>
-      <section id="aboutme" className="z-30 min-h-screen py-24 overflow-hidden bg-black sm:py-32">
+      <section id="aboutme" className="z-50 min-h-screen py-24 overflow-hidden bg-black sm:py-32">
         <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
             <div className="px-6 md:px-0 lg:pr-4 lg:pt-4">
@@ -58,10 +58,10 @@ export default function AboutMe() {
             </div>
             <div className="sm:px-6 lg:px-0">
               <div className="relative px-6 pt-8 overflow-hidden bg-green-700 isolate sm:mx-auto sm:max-w-2xl sm:rounded-xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
-                <div className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-15deg] bg-green-100 opacity-20 ring-1 ring-inset ring-white" />
-                <div className="max-w-2xl mx-auto sm:mx-0 sm:max-w-none">
+                <div className="absolute z-[-1] -inset-y-px -left-3 w-full origin-bottom-left skew-x-[-15deg] bg-green-100 opacity-20 ring-1 ring-inset ring-white" />
+                <div className="z-[2] max-w-2xl mx-auto sm:mx-0 sm:max-w-none">
                   <div className="w-screen overflow-hidden bg-gray-900 rounded-tl-xl ring-1 ring-white/10">
-                    <div className="flex h-8 bg-gray-800/40 ring-1 ring-white/5">
+                    <div className="flex h-8 z-[50] bg-gray-800/40 ring-1 ring-white/5">
                       <div className="flex -mb-px text-sm font-medium leading-6 text-gray-400">
                         <p
                           className={`block px-4 py-2 cursor-pointer ${activeTab === "Language" ? "text-white border-b border-r border-b-white/20 border-r-white/10 bg-white/5" : "border-r border-gray-600/10"}`}
